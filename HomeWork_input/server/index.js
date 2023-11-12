@@ -1,9 +1,9 @@
 const express = require("express");
 const app = express();
-const dotenv = require("dotenv");
+
 const cors = require("cors");
 const { router } = require("./routes/router.js");
-dotenv.config();
+require("dotenv-safe").config();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

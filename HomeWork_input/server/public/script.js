@@ -5,10 +5,13 @@ let timer;
 
 input.addEventListener("input", (e) => {
   e.preventDefault();
+  console.log("tomer1=>", timer);
   clearTimeout(timer);
+  console.log("tomer2=>", timer);
   timer = setTimeout(async () => {
     const url = "http://localhost:5000/api/search";
     const value = e.target.value;
+    console.log("tomer3=>", timer);
 
     try {
       const response = await fetch(`${url}?value=${value}`);
