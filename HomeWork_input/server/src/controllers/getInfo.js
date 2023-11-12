@@ -7,7 +7,7 @@ const getInfo = (req, res) => {
   //   el.text.toLowerCase().includes(req.query.value)
   // );
   for (let i = 0; articles.length > i; i++) {
-    if (articles[i].text.includes(request.toLowerCase())) {
+    if (articles[i].text.toLowerCase().includes(request.toLowerCase())) {
       search.push(articles[i]);
     }
   }
