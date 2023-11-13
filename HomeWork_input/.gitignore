@@ -1,5 +1,7 @@
 /.env
 /package-lock.json
+*lock*
 /node_modules
 .idea
 .vscode
+.DS_Store
